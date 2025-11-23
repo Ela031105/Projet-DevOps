@@ -151,16 +151,16 @@ nav a:hover {
     <?php endif; ?>
     <form action="" method="post">
         <label>nom</label>
-        <input type="text" name="nom" placeholder="ton nom" required> <br><br>
+        <input type="text" name="nom" placeholder=" nom" required> <br><br>
 
         <label>prenom</label>
-        <input type="text" name="prenom" placeholder="ton prenom" required> <br><br>
+        <input type="text" name="prenom" placeholder=" prenom" required> <br><br>
 
         <label>email</label>
-        <input type="text" name="email" placeholder="ton email" required> <br><br>
+        <input type="text" name="email" placeholder=" email" required> <br><br>
 
         <label>password</label>
-        <input type="password" name="password" placeholder="ecrit un password " required> <br><br>
+        <input type="password" name="password" placeholder=" mot de passe " required> <br><br>
 
         <label>confirm_password</label>
         <input type="password" name="confirm_password" placeholder="confirme password" required> <br><br>
