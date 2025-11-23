@@ -163,7 +163,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     <?php endif; ?>
 
     <form action="" method="post">
-        <label>nom or email</label>
+        <label>name or email</label>
         <input type="text" name="email" placeholder="your@email.com" required>
 
         <label>password</label>
