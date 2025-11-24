@@ -14,7 +14,7 @@
     <nav class="menu-right">
         <a href="login.php">Login</a>
         <a href="register.php">Create Account</a>
-        <a href="add Cart.html" class="cart">🛒
+        <a href="add Cart.html" class="cart">
              <span id="cart-count">0</span>
         </a>
     </nav>
@@ -132,7 +132,6 @@ function saveCart(cart) {
 function AddCart(name, price) {
     const cart = getCart();
 
-    // try to find item by name (you can use id if you have it)
     const idx = cart.findIndex(i => i.name === name);
     if (idx > -1) {
         // already in cart -> increase qty
@@ -147,15 +146,6 @@ function AddCart(name, price) {
     alert(`${name} added to cart!`);
 }
 
-/* Optional: attach listeners for data-attribute buttons
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.add-to-cart').forEach(btn => {
-        btn.addEventListener('click', () => {
-            AddCart(btn.dataset.name, btn.dataset.price);
-        });
-    });
-});
-*/
 
 /* ---------- CART COUNT ---------- */
 function updateCartCount() {
@@ -170,10 +160,5 @@ function updateCartCount() {
 /* initialize count on load */
 document.addEventListener('DOMContentLoaded', updateCartCount);
 </script>
-
-
-
-
-
 </body>
 </html>
